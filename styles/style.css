@@ -1,0 +1,729 @@
+
+
+/*header*/
+.navbar h1{font-family: "Bebas Neue", sans-serif ;
+font-size: 4rem;
+color: white;}
+.navbar{
+    background-color: rgb(7, 7, 146);
+    
+}
+.navbar a{
+    text-decoration: none;
+}
+  
+.navbar .nav-link {
+    font-size: 1rem;
+}
+
+.nav-link{
+color: white;
+}
+
+/*main-idex*/
+.novedades{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    padding: 5px;
+    gap: 0.5rem;
+}
+
+
+.caja1-novedades{
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:30px ;
+  gap: 1rem;
+  background-color:rgb(7, 7, 146) ;
+}
+.caja1-novedades img{
+  width: 100%;
+  height: auto;
+}
+.caja1-novedades-baritonos{
+    font-size: 2rem;
+    color: white;
+}
+   
+
+.caja2-novedades{
+   grid-column: 2/3;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   background-color: rgb(7, 7, 146) ;
+   padding: 20px;
+}
+
+.caja3-novedades{
+   grid-column:3/4;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   background-color:rgb(7, 7, 146)  ;
+   padding: 20px;
+}
+.caja3-novedades img{
+     width: 100%;
+     height: 180px;
+     object-fit: contain;
+}
+
+
+  
+
+
+.noticias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    padding: 5px;
+    gap: 1rem;
+}
+
+
+   .caja1-noticias{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/novedades/2025-03-30_templeu_jalc_lawrencesumulong_0142.jpg);
+    grid-column: 1/4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 40px;
+   }
+  .caja1-noticias h3{
+    color: white;
+    font-size: 3rem;
+  } 
+  .caja1-noticias p{
+    color: white;
+    font-size: 2rem;
+  }
+
+  .caja2-noticias{
+  grid-column: 1/2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(7, 7, 146) ;
+   }
+   .caja3-noticias{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(7, 7, 146) ;
+   }
+
+   .caja4-noticias{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    
+    background-color:  rgb(7, 7, 146);
+   }
+   .caja5-noticias{
+    grid-column:1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .caja5-noticias img{
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+   .caja6-noticias{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   }
+
+
+   /*mouthpiece-saxofones-accesorios*/
+
+   .contenedor{
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    padding: 5px;
+   }
+   
+    
+
+   .card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  
+    
+   
+
+   }
+.boton-comprar {
+  margin-top: auto;
+}
+   .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+   .descripcion{
+    
+  font-size: 1rem;
+  color: #555;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+   
+
+   /*formulario*/
+
+  .formulario{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    
+    padding: 15px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/novedades/pexels-jean-paul-wright-39375669-7929649.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  }
+
+   .button-formulario{
+    display: flex;
+    justify-content: center;
+    
+   }
+   .titulo-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    background: none;
+
+}
+
+  .form-label{
+    color: white;
+  }
+
+   /*footer*/
+
+   .footer-contenedor{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+    gap:2rem ;
+    background-color: rgb(7, 7, 146);
+   }
+
+   .logo-footer{
+    width:auto;
+    height: 50px;
+    object-fit: contain
+   }
+
+   .footer-box2{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   margin-top: 10px;
+ 
+   }
+
+   .footer-box3 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+   
+  
+   }
+  
+  .h3box2{
+  
+    font-size: 2rem;
+    color: white;
+  }
+ 
+ .footer-h2-b3{
+  font-size: 2rem;
+  background-image: none;
+
+}
+  
+
+  /*parrafos-titulos-general*/
+  p{
+    font-family: "Lora", serif;
+}
+
+a{
+    font-family: "Lora", serif;
+
+}
+h2{ font-family: "Bebas Neue", sans-serif ;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/novedades/pexels-caique-araujo-101156227-28653606.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 5rem;
+
+}
+ h3{font-family: "Bebas Neue", sans-serif ;
+
+}
+ h4{font-family: "Bebas Neue", sans-serif ;
+
+}
+.titulo-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    background: none;
+
+}
+
+
+
+
+
+/*tablets*/
+
+@media(min-width:768px) and (max-width:1024px){
+
+.navbar h1{font-family: "Bebas Neue", sans-serif ;
+font-size: 3rem;
+color: white;}
+ 
+h2{ font-family: "Bebas Neue", sans-serif ;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   color: white;
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/novedades/pexels-caique-araujo-101156227-28653606.jpg");
+   background-position: right;
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-size: 3rem;}
+
+
+.titulo-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    background: none;
+
+}
+
+   
+.novedades{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  padding: 5px;
+}
+
+
+.caja1-novedades{
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:20px ;
+  gap: 1rem;
+  background-color:rgb(7, 7, 146) ;
+}
+.caja1-novedades img{
+  width: 100%;
+  height: auto;
+}
+    
+
+.caja2-novedades{
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(7, 7, 146) ;
+  padding: 10px;
+}
+.caja2-novedades img{
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+.caja3-novedades{
+  grid-column:3/4 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color:rgb(7, 7, 146)  ;
+  padding: 20px;
+}
+.caja3-novedades img{
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+   
+   .footer-contenedor{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto; 
+   
+    gap:2rem ;
+    background-color: rgb(7, 7, 146);
+   }
+
+
+
+   .logo-footer{
+    width:auto;
+    height: 25px;
+    object-fit: contain
+   }
+
+   .footer-box2{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   
+  
+ 
+   }
+
+   .footer-box3 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+   
+  
+   }
+
+  .h3box2{
+  
+    font-size: 1.5rem;
+    color: white;}
+
+   .footer-h2-b3{
+    font-size: 1.5rem;
+    background-image: none;
+
+}
+
+}
+
+/*mobile*/
+@media(min-width:320px) and (max-width:480px){
+.navbar h1{font-family: "Bebas Neue", sans-serif ;
+font-size: 2rem;
+color: white;}
+ 
+h2{ font-family: "Bebas Neue", sans-serif ;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   color: white;
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/novedades/pexels-caique-araujo-101156227-28653606.jpg");
+   background-position: right;
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-size: 2rem;}
+
+
+.titulo-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    background: none;
+
+}
+
+.novedades{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    padding: 5px;
+}
+
+
+.caja1-novedades{
+  grid-column:1/2 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:10px ;
+  gap: 1rem;
+  background-color:rgb(7, 7, 146) ;
+}
+
+
+
+.caja2-novedades{
+   grid-column:1/2 ;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   background-color: rgb(7, 7, 146) ;
+   padding: 10px;
+}
+.caja2-novedades img{
+ width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+.caja3-novedades{
+   grid-column:1/2 ;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   background-color:rgb(7, 7, 146)  ;
+   padding: 10px;
+}
+.caja3-novedades img{
+     width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+
+
+.noticias{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-auto-rows: auto;
+    padding: 5px;
+    gap: 1rem;
+}
+
+
+   .caja1-noticias{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/novedades/2025-03-30_templeu_jalc_lawrencesumulong_0142.jpg);
+    grid-column: 1/2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 40px;
+   }
+  .caja1-noticias h3{
+    color: white;
+    font-size: 2rem;
+  } 
+  .caja1-noticias p{
+    color: white;
+    font-size: 1rem;
+  }
+
+  .caja2-noticias{
+  grid-column: 1/2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(7, 7, 146) ;
+   }
+   .caja3-noticias{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(7, 7, 146) ;
+   }
+
+   .caja4-noticias{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    
+    background-color:  rgb(7, 7, 146);
+   }
+   .caja5-noticias{
+    grid-column:1/2;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 7, 146) ;
+    
+   }
+   .caja5-noticias img{
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+   .caja6-noticias{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   }
+
+
+.contenedor{
+   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 1rem;
+    padding: 5px;
+   }
+   
+    
+
+   .card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  
+    
+   
+
+   }
+.boton-comprar {
+  margin-top: auto;
+}
+  .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+  .descripcion{
+    
+  font-size: 1rem;
+  color: #555;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+   .footer-contenedor{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:auto ; 
+   
+    gap:2rem ;
+    background-color: rgb(7, 7, 146);
+   }
+
+
+
+   .logo-footer{
+    width:auto;
+    height: 25px;
+    object-fit: contain
+   }
+
+   .footer-box2{
+   display: flex;
+   flex-direction: column;
+   
+  
+ 
+   }
+
+   .footer-box3 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+   
+  
+   }
+
+   .h3box2{
+  
+    font-size: 1.5rem;
+    color: white;}
+   
+
+   .footer-h2-b3{
+    font-size: 1rem;
+    background-image: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+}
