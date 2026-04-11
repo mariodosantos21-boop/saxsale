@@ -355,8 +355,7 @@ h2{ font-family: "Bebas Neue", sans-serif ;
     background: none;
 
 }
-
-   
+/*novedades-index*/   
 .novedades{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -411,7 +410,7 @@ h2{ font-family: "Bebas Neue", sans-serif ;
     object-fit: contain;
 }
 
-
+/*footer*/
    
    .footer-contenedor{
     display: grid;
@@ -490,7 +489,7 @@ h2{ font-family: "Bebas Neue", sans-serif ;
     background: none;
 
 }
-
+/*novedades-index*/
 .novedades{
     display: grid;
     grid-template-columns: 1fr;
@@ -543,7 +542,7 @@ h2{ font-family: "Bebas Neue", sans-serif ;
   object-fit: contain;
 }
 
-
+/*noticias-index*/
 
 .noticias{
     display: grid;
@@ -617,7 +616,7 @@ h2{ font-family: "Bebas Neue", sans-serif ;
     align-items: center;
     
    }
-
+/*mouthpiece-saxofones-accesorios*/
 
 .contenedor{
    
@@ -668,7 +667,7 @@ h2{ font-family: "Bebas Neue", sans-serif ;
 
 
 
-
+/*footer*/
 
 
    .footer-contenedor{
