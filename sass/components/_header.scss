@@ -1,0 +1,33 @@
+@use "../utilities/variables" as v;
+
+.navbar {
+  background-color: v.$color-principal;
+ 
+
+  a {
+    font-family:v.$fuente-2;
+    text-decoration: none;
+    
+  }
+
+  h1 {
+    font-family:v.$fuente-1 ;
+    font-size: 4rem;
+    color: white;
+
+    &:hover {
+      color: crimson;
+      transform: scale(1.05);
+    }
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    color: white;
+
+    &:hover {
+      color: crimson;
+      transform: scale(1.05);
+    }
+  }
+}

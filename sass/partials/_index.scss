@@ -1,0 +1,131 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+
+
+
+
+   
+.main-inicio{
+      
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/novedades/mark6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
+
+.star-container{
+    @include m.flex(column, wrap, center, center, 20px);
+   
+
+    
+   
+
+h2{
+    font-family: v.$fuente-1;
+    font-size: 4rem;
+    color: white;
+    
+}
+p{
+    font-family: v.$fuente-2;
+    color: white;
+    text-align: center;
+}
+
+}
+.star-container2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+ 
+  
+  h2{
+    grid-column: 1/-1;
+    font-family: v.$fuente-1;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .card{
+    img{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+    }
+    .card-body{
+        h3{font-family: v.$fuente-1;
+            font-size: 2rem;
+
+        }
+    }
+
+  }
+  
+}
+
+@include m.mobile{
+   
+    .star-container{
+        padding: 1rem;
+        gap: 1rem;
+        h2{
+            font-size: 2rem;
+        }
+       
+    }
+    
+    .star-container2{
+        grid-template-columns: 1fr;
+
+
+        h2{
+            font-size:2rem ;
+        }
+    }
+}
+
+@include m.mobilelarge{
+    .star-container{
+        padding: 1rem;
+        gap: 1rem;
+        h2{
+         font-size: 3rem;
+        }
+       
+    }
+    
+    .star-container2{
+        grid-template-columns:repeat(1, 1fr);
+
+
+        h2{
+            font-size:3rem ;
+        } 
+    }
+}
+
+@include m.tablet{
+    .star-container{
+        padding: 1rem;
+        gap: 1rem;
+        h2{
+         font-size: 4rem;
+        }
+       
+    }
+    
+    .star-container2{
+        grid-template-columns:repeat(2, 1fr);
+
+
+        h2{
+            font-size:4rem ;
+        }
+    }
+}
+}

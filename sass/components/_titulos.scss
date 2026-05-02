@@ -1,0 +1,24 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.titulo-seccion {
+ @include m.flex(row, wrap, center, center, 0);
+  font-family: v.$fuente-1;
+  grid-column: 1 / -1;
+  color: white;
+  font-size: 5rem;
+   background-image: linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ), url("../assets/novedades/pexels-caique-araujo-101156227-28653606.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include m.mobile{
+    font-size: 3rem;
+  }
+  @include m.mobilelarge{
+    font-size: 3rem;
+  }
+}

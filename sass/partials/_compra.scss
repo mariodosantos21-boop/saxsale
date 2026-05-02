@@ -1,0 +1,21 @@
+@use "../utilities/variables" as v;
+
+
+.formulario-de-pago{
+    padding: 15px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/novedades/pexels-jean-paul-wright-39375669-7929649.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .titulo-formulario{
+        text-align: center;
+        color: white;
+        font-family: v.$fuente-1;
+        font-size: 3rem;
+    }
+   label{
+    color: white;
+    font-family: v.$fuente-2; 
+   }
+   }

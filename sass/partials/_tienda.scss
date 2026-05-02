@@ -1,0 +1,94 @@
+@use "../utilities/variables" as v;
+
+@use "../utilities/mixins" as m;
+
+  .contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+  padding: 5px;
+  background-color: #555;
+
+  .card {
+    @include m.flex(column, wrap, flex-start, center, 1rem);
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+
+    
+    h3, h4 {
+      font-family: v.$fuente-1;
+    }
+
+    
+    p {
+      font-family: v.$fuente-2;
+    }
+
+   
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+    }
+
+   
+    .descripcion {
+      font-size: 1rem;
+      color: #555;
+      display: -webkit-box;
+      -webkit-line-clamp: 3; 
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+   
+    .boton-comprar {
+      margin-top: auto;
+    }
+  }
+  @include m.mobile{
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 1rem;
+    padding: 5px;
+   
+   .card{
+    @include m.flex(column, wrap, flex-start, center, 1rem);
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  
+    
+ 
+   
+.boton-comprar {
+  margin-top: auto;
+  
+}
+  .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+  .descripcion{
+    
+  font-size: 1rem;
+  color: #555;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+    }
+
+     }
+    }
+   
+}
+ 
+  
