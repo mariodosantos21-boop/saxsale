@@ -2,7 +2,44 @@
 @use "../utilities/mixins" as m;
 
 
+@keyframes vibrate{
+    0%{
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+    10%{
+       transform: translateY(10px);
+    }
+    20%{
+       transform: translateX(5px);
+    }
+    30%{
+       transform: translateX(-5px);
+    }
+    40%{
+        transform: translateX(5px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }
+    60%{
+       transform: translateX(5px);
+    }
+    70%{
+        transform: translateX(-5px);
+    }
+    80%{
+        transform: translateX(5px);
+    }
+    90%{
+        transform: translateX(-5px);
+    } 
+    100%{
+        transform: translateY(0);
+        transform: translateX(0);
+    }
 
+}
 
 
    
@@ -42,7 +79,7 @@ p{
   gap: 1rem;
   padding: 1rem;
   justify-items: center;
- 
+  
   
   h2{
     grid-column: 1/-1;
@@ -52,6 +89,7 @@ p{
     font-size: 4rem;
   }
   .card{
+    animation: vibrate 4s linear infinite;
     img{
          width: 100%;
          height: 100%;
@@ -63,6 +101,9 @@ p{
 
         }
     }
+   &:hover{
+    animation: none;
+   }
 
   }
   
