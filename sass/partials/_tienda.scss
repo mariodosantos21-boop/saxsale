@@ -11,7 +11,7 @@
   background-color: #555;
 
   .card {
-    @include m.flex(column, wrap, flex-start, center, 1rem);
+    @extend %exflex;
     text-align: center;
     padding: 20px;
     height: 100%;

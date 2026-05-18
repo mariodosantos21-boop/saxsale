@@ -2,20 +2,15 @@
 @use "../utilities/mixins" as m;
 
 .footer-contenedor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  gap: 20px;
-  background-color: v.$color-principal;
+  @include m.flex(column, wrap, center, center, 20px);
+   padding: 20px;
+   background-color: v.$color-principal;
 
 
 
 .footer-box2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+   @include m.flex(column, wrap, center, center, 0);
+    width: 100%;
 
 
 .h3box2 {
@@ -33,16 +28,13 @@
 
 
 .footer-box2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+   @include m.flex(column, wrap, center, center, 0);
+
 }
 
 .footer-box2 > div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+   @include m.flex(column, wrap, center, center, 15px);
+ 
 }
 
 
@@ -71,7 +63,19 @@
   font-family: v.$fuente-1;
 }
 }
+@include m.mobile{
+  .logos{
+    @include m.flex(column, wrap, center, center, 1rem)
+    
+  }
+}
 
+@include m.mobilelarge{
+.logos{
+    @include m.flex(column, wrap, center, center, 1rem)
+    
+  }
+}
 
 }
 

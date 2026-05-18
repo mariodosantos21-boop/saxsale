@@ -29,18 +29,33 @@
 /*mixin tablet*/
 /*mixin mobile*/
 /*mixin intermedio*/
+/*extend*/
+.contenedor .card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
 .footer-contenedor {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
   gap: 20px;
+  padding: 20px;
   background-color: rgb(7, 7, 146);
 }
 .footer-contenedor .footer-box2 {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  gap: 0;
   width: 100%;
 }
 .footer-contenedor .footer-box2 .h3box2 {
@@ -56,12 +71,17 @@
 .footer-contenedor .footer-box2 .footer-box2 {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  gap: 0;
 }
 .footer-contenedor .footer-box2 .footer-box2 > div {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 15px;
 }
 .footer-contenedor .footer-box2 .logo-footer {
@@ -83,6 +103,26 @@
   font-size: 2rem;
   color: white;
   font-family: "Bebas Neue", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  .footer-contenedor .logos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .footer-contenedor .logos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .titulo-seccion {
@@ -121,12 +161,6 @@
   background-color: #555;
 }
 .contenedor .card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
   text-align: center;
   padding: 20px;
   height: 100%;
