@@ -185,10 +185,6 @@
 .contenedor .card .descripcion {
   font-size: 1rem;
   color: #555;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .contenedor .card .boton-comprar {
   margin-top: auto;
